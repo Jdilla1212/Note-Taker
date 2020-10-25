@@ -1,5 +1,6 @@
 const express = require("express");
 const  path = require("path");
+const fs = require('fs');
 
 // Sets up the Express App
 // =============================================================
@@ -23,7 +24,7 @@ app.get("/notes", function (req, res) {
 
 //API Routes
 app.get("/api/notes", function(req, res) {
-    fs.readFile("/db/db.json", function (err, data) {
+    fs.readFile("./db/db.json", function (err, data) {
         if (err) throw (err);
         let notes = JSON.parse(data)
         return res.json(notes);
