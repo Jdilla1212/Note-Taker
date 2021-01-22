@@ -1,6 +1,8 @@
 ## Express Note-Taker
 ![License badge](https://img.shields.io/badge/license-MIT-green)
 
+[For deployed version, click me](https://secret-chamber-00485.herokuapp.com/)
+
 ## Description
 An express-driven application to view, add and delete notes.  Using front and back-end development to power this app, there are HTML and API routes  
 
